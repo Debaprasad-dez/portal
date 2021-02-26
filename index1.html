@@ -593,506 +593,207 @@
 
             }
         </style>
-    
-        <div class=" card mb-4 ">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Doctor's Analysis</h6>
-            </div>
-            <div class="card-body">
-            <form action="" method="post" class=".form-control">
-
-                <input hidden name="phone_number" type="text" value="whatsapp:+254720807818"> </input>
-                <input hidden name="user_number" value=1> </input>
-
-                <input type="hidden" name="csrfmiddlewaretoken" value="7idEFg6pXQcsvOKfLNVwHi0RLeCBpGYvfFrzAS7qzUhZsL8a3SNvQHLjfNLrLItI">
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_medical_history">Medical history:</label></b> </div>
-                    <div class=""><textarea type="text" name="medical_history" value="null" maxlength="450" required id="id_medical_history"></textarea></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_dental_history">Dental history:</label></b> </div>
-                    <div class=""><textarea class="autosize" type="text" name="dental_history" value="null" maxlength="450" required id="id_dental_history"></textarea></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_stains">Stains:</label></b> </div>
-                    <div class=""><select name="stains" id="id_stains">
-  <option value="+" selected>+</option>
-
-  <option value="++">++</option>
-
-  <option value="+++">+++</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_calculus">Calculus:</label></b> </div>
-                    <div class=""><select name="calculus" id="id_calculus">
-  <option value="+" selected>+</option>
-
-  <option value="++">++</option>
-
-  <option value="+++">+++</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_gingivitis">Gingivitis:</label></b> </div>
-                    <div class=""><select name="gingivitis" id="id_gingivitis">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present">Present</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_oral_hygiene">Oral hygiene:</label></b> </div>
-                    <div class=""><select name="oral_hygiene" id="id_oral_hygiene">
-  <option value="Excellent">Excellent</option>
-
-  <option value="Good" selected>Good</option>
-
-  <option value="Fair">Fair</option>
-
-  <option value="Poor">Poor</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_gum_recession">Gum recession:</label></b> </div>
-                    <div class=""><select name="gum_recession" id="id_gum_recession">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Class 1">Class 1</option>
-
-  <option value="Class 2">Class 2</option>
-
-  <option value="Class 3">Class 3</option>
-
-  <option value="Class 4">Class 4</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_tooth_decay">Tooth decay:</label></b> </div>
-                    <div class=""><select name="tooth_decay" id="id_tooth_decay">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present">Present</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_tooth_decay_description">Tooth decay description:</label></b> </div>
-                    <div class=""><textarea rows="3" type="text" name="tooth_decay_description" value="null" maxlength="400" required id="id_tooth_decay_description"></textarea></div> &nbsp &nbsp &nbspOnly Required if Tooth Decay is Present&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_root_stumps">Root stumps:</label></b> </div>
-                    <div class=""><select name="root_stumps" id="id_root_stumps">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present">Present</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_root_stump_description">Root stump description:</label></b> </div>
-                    <div class=""><textarea type="text" name="root_stump_description" value="null" maxlength="400" required id="id_root_stump_description"></textarea></div> &nbsp &nbsp &nbspOnly Required if Root Stump is Present&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_tooth_wear">Tooth wear:</label></b> </div>
-                    <div class=""><select name="tooth_wear" id="id_tooth_wear">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Attrition">Attrition</option>
-
-  <option value="Abrasion">Abrasion</option>
-
-  <option value="Abfraction">Abfraction</option>
-
-  <option value="Erosion">Erosion</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_missing_tooth">Missing tooth:</label></b> </div>
-                    <div class=""><select name="missing_tooth" id="id_missing_tooth">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present">Present</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_missing_tooth_number">Missing tooth number:</label></b> </div>
-                    <div class=""><input type="text" name="missing_tooth_number" value="null" maxlength="30" required id="id_missing_tooth_number"></div> &nbsp &nbsp &nbspOnly Required if there is a missing tooth&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_non_vital_tooth">Non vital tooth:</label></b> </div>
-                    <div class=""><select name="non_vital_tooth" id="id_non_vital_tooth">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present">Present</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_non_vital_tooth_number">Non vital tooth number:</label></b> </div>
-                    <div class=""><input type="text" name="non_vital_tooth_number" value="null" maxlength="30" required id="id_non_vital_tooth_number"></div> &nbsp &nbsp &nbspOnly Required if there is a non vital tooth&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_crowding">Crowding:</label></b> </div>
-                    <div class=""><select name="crowding" id="id_crowding">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present with respect to Lower-anterior / Upper-anterior.">Present with respect to Lower-anterior / Upper-anterior.</option>
-
-  <option value="Left lower posterior region/ Left posterior upper region">Left lower posterior region/ Left posterior upper region</option>
-
-  <option value="Right posterior upper region/ Right posterior lower region">Right posterior upper region/ Right posterior lower region</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_spacing">Spacing:</label></b> </div>
-                    <div class=""><select name="spacing" id="id_spacing">
-  <option value="Absent" selected>Absent</option>
-
-  <option value="Present with respect to Lower-anterior / Upper-anterior.">Present with respect to Lower-anterior / Upper-anterior.</option>
-
-  <option value="Left lower posterior region/ Left posterior upper region">Left lower posterior region/ Left posterior upper region</option>
-
-  <option value="Right posterior upper region/ Right posterior lower region">Right posterior upper region/ Right posterior lower region</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_emergency_findings">Emergency findings:</label></b> </div>
-                    <div class="input_field_wrapper4">
-                      <input type="text" name="emergency[]" value="null" maxlength="450" required id="id_emergency_findings"/>
-                      <a href="javascript:void(0);" class="add_button4" title="Add field">
-                        <button id="addbtn4" class="btn-primary small py-1" style="margin: 5px">Add another</button>
-                      </a>
-                    </div>
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        var maxFieldLimit = 10; //Input fields increment limitation
-                        var add_more_button = $(".add_button4"); //Add button selector
-                        var Fieldwrapper = $(".input_field_wrapper4"); //Input field wrapper
-                        var fieldHTML =
-                          '<div><input class="my-1" id="id_emergency_findings" type="text" name="emergency[]" value=""/><a href="javascript:void(0);" class="remove_button small text-danger" style="padding:0px 10px;" title="Remove field">Remove</a></div>'; //New input field html
-                        var x = 1; //Initial field counter is 1
-                        $(add_more_button).click(function () {
-                          //Once add button is clicked
-                          if (x < maxFieldLimit) {
-                            //Check maximum number of input fields
-                            x++; //Increment field counter
-                            $(Fieldwrapper).append(fieldHTML); // Add field html
-                          }
-                        });
-                        $(Fieldwrapper).on("click", ".remove_button", function (e) {
-                          //Once remove button is clicked
-                          e.preventDefault();
-                          $(this).parent("div").remove(); //Remove field html
-                          x--; //Decrement field counter
-                        });
-                      });
-                    </script>
-                  <script>
-                    document.getElementById("addbtn4").addEventListener("click", function(event){
-                        event.preventDefault()
-                      });
-                  </script>
-                </div>
-
-                
-
-
-                
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_diagnosis">Diagnosis:</label></b> </div>
-                    <div class="input_field_wrapper">
-                      <input type="text" name="diagnosis[]" value="null" maxlength="450" required id="id_diagnosis"/>
-                      <a href="javascript:void(0);" class="add_button" title="Add field">
-                        <button id="addbtn" class="btn-primary small py-1" style="margin: 5px">Add another</button>
-                      </a>
-                    </div>
-                    
-                    
-                    
-                    
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        var maxFieldLimit = 10; //Input fields increment limitation
-                        var add_more_button = $(".add_button"); //Add button selector
-                        var Fieldwrapper = $(".input_field_wrapper"); //Input field wrapper
-                        var fieldHTML =
-                          '<div><input class="my-1" id="id_diagnosis" type="text" name="diagnosis[]" value=""/><a href="javascript:void(0);" class="remove_button small text-danger" style="padding:0px 10px;" title="Remove field">Remove</a></div>'; //New input field html
-                        var x = 1; //Initial field counter is 1
-                        $(add_more_button).click(function () {
-                          //Once add button is clicked
-                          if (x < maxFieldLimit) {
-                            //Check maximum number of input fields
-                            x++; //Increment field counter
-                            $(Fieldwrapper).append(fieldHTML); // Add field html
-                          }
-                        });
-                        $(Fieldwrapper).on("click", ".remove_button", function (e) {
-                          //Once remove button is clicked
-                          e.preventDefault();
-                          $(this).parent("div").remove(); //Remove field html
-                          x--; //Decrement field counter
-                        });
-                      });
-                    </script>
-                  <script>
-                    document.getElementById("addbtn").addEventListener("click", function(event){
-                        event.preventDefault()
-                      });
-                  </script>
-                </div>
-            
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_preventive_measures">Preventive measures:</label></b> </div>
-                    <div class="input_field_wrapper2">
-                      <input type="text" name="prevent[]" value="null" maxlength="450" required id="id_preventive_measures"/>
-                      <a href="javascript:void(0);" class="add_button2" title="Add field">
-                        <button id="addbtn2" class="btn-primary small py-1" style="margin: 5px">Add another</button>
-                      </a>
-                    </div>
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        var maxFieldLimit = 10; //Input fields increment limitation
-                        var add_more_button = $(".add_button2"); //Add button selector
-                        var Fieldwrapper = $(".input_field_wrapper2"); //Input field wrapper
-                        var fieldHTML =
-                          '<div><input class="my-1" id="id_preventive_measures" type="text" name="prevent[]" value=""/><a href="javascript:void(0);" class="remove_button small text-danger" style="padding:0px 10px;" title="Remove field">Remove</a></div>'; //New input field html
-                        var x = 1; //Initial field counter is 1
-                        $(add_more_button).click(function () {
-                          //Once add button is clicked
-                          if (x < maxFieldLimit) {
-                            //Check maximum number of input fields
-                            x++; //Increment field counter
-                            $(Fieldwrapper).append(fieldHTML); // Add field html
-                          }
-                        });
-                        $(Fieldwrapper).on("click", ".remove_button", function (e) {
-                          //Once remove button is clicked
-                          e.preventDefault();
-                          $(this).parent("div").remove(); //Remove field html
-                          x--; //Decrement field counter
-                        });
-                      });
-                    </script>
-                    <script>
-                      document.getElementById("addbtn2").addEventListener("click", function(event){
-                          event.preventDefault()
-                        });
-                    </script>
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_precautions">Precautions:</label></b> </div>
-                    <div class="input_field_wrapper3">
-                      <input type="text" name="precautions[]" value="null" maxlength="450" required id="id_precautions"/>
-                      <a href="javascript:void(0);" class="add_button3" title="Add field">
-                        <button id="addbtn3" class="btn-primary small py-1" style="margin: 5px">Add another</button>
-                      </a>
-                    </div>
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        var maxFieldLimit = 10; //Input fields increment limitation
-                        var add_more_button = $(".add_button3"); //Add button selector
-                        var Fieldwrapper = $(".input_field_wrapper3"); //Input field wrapper
-                        var fieldHTML =
-                          '<div><input class="my-1" id="id_precautions" type="text" name="precautions[]" value=""/><a href="javascript:void(0);" class="remove_button small text-danger" style="padding:0px 10px;" title="Remove field">Remove</a></div>'; //New input field html
-                        var x = 1; //Initial field counter is 1
-                        $(add_more_button).click(function () {
-                          //Once add button is clicked
-                          if (x < maxFieldLimit) {
-                            //Check maximum number of input fields
-                            x++; //Increment field counter
-                            $(Fieldwrapper).append(fieldHTML); // Add field html
-                          }
-                        });
-                        $(Fieldwrapper).on("click", ".remove_button", function (e) {
-                          //Once remove button is clicked
-                          e.preventDefault();
-                          $(this).parent("div").remove(); //Remove field html
-                          x--; //Decrement field counter
-                        });
-                      });
-                    </script>
-                    <script>
-                      document.getElementById("addbtn3").addEventListener("click", function(event){
-                          event.preventDefault()
-                        });
-                    </script>
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_patient_referral">Patient referral:</label></b> </div>
-                    <div class=""><input type="text" name="patient_referral" value="null" maxlength="450" required id="id_patient_referral"></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_doctor_name">Doctor name:</label></b> </div>
-                    <div class=""><input type="text" name="doctor_name" value="null" maxlength="50" required id="id_doctor_name"></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_registration_id">Registration id:</label></b> </div>
-                    <div class=""><input type="text" name="registration_id" value="null" maxlength="50" required id="id_registration_id"></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-
-
-                <div class="form-group row">
-                    <div class="col-sm-3 col-form-label"> <b><label for="id_review_submit">Review submit:</label></b> </div>
-                    <div class=""><select name="review_submit" id="id_review_submit">
-  <option value="Review" selected>Review</option>
-
-  <option value="Submit">Submit</option>
-
-</select></div> &nbsp &nbsp &nbsp&nbsp
-
-                </div>
-
-                
-                
-                
-                    <!-- Inspired by this dribbble post by Colin Garvin https://dribbble.com/shots/1426764-submitx2-Button -->
-<div class="loading-dock">
+        
+        <form class="form">
+  <label for="fname" class="visuallyhidden">Your first name</label>
+  <div class="row m-0 p-0">
+
+      <input class="form__input" id="fname" type="text" name="fname" placeholder="First Name" required>
+      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+  </div>
+  <style>
+      #textValidate{
+          display: none;
+      }
+      #fname:valid + #textValidate{
+          display: block;
+      }
+      #lname:valid + #textValidate{
+          display: block;
+      }
+      #email:valid + #textValidate{
+          display: block;
+      }
+      #phone:valid + #textValidate{
+          display: block;
+      }
+  </style>
+      <label for="lname" class="visuallyhidden">Your last name</label>
+  <div class="row m-0 p-0">
+      <input class="form__input" id="lname" type="text" name="lname" placeholder="Last Name" required>
+      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+  </div>
+  <label for="email" class="visuallyhidden">Your email address</label>
+  <div class="row m-0 p-0">
+      <input class="form__input" id="email" type="email" name="email" placeholder="Email Address" required>
+    <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+  </div>
+  <label for="phone" class="visuallyhidden">Your phone number</label>
+  <div class="row m-0 p-0">
+      <input class="form__input" id="phone" type="number" name="phone" placeholder="Phone number" required>
+      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+  </div>
+  <div class="centered-cover">
+		<div class="row m-0 p-0">
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input">
+						<option value="red">Null</option>
+						<option value="green">Green</option>
+						<option value="blue">Blue</option>
+				</select>
+				<!-- the trick here is the select options must have the same value as the their repective element's class -->
+				<div class="box null">
+				</div>
+				<div class="box blue">
+                    <i id="" class="fa fa-check-circle mt-4 ml-1"></i>
+				</div>
+				<div class="box green">
+                    <i id="" class="fa fa-check-circle mt-4 ml-1"></i>
+				</div>
+		</div>
+</div>
+<script>
+    $(document).ready(function() {
+		$('.box').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('select').change(function() { //on change do stuff
+		$('.box').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<style>
+
+.hidden {
+  display: none;
+}
+
+/* Ignore these styles, just for display */
+.box {
+  height: 10px;
+  width: 10px;
+}
+
+
+
+
+
+</style>
+<!-- Check out my other pens or hit me up on Twitter -->
+<footer id="footer" class="footer hidden">
+	<a href="https://codepen.io/iamjoshellis/"><i class="fa fa-codepen"></i></a>
+	<a href="https://twitter.com/iamjoshellis/"><i class="fa fa-twitter"></i></a>
+</footer>
+  <div class="loading-dock">
     <svg id="load-b" x="0px" y="0px" viewBox="0 0 150 150">
     <circle class="loading-inner" cx="75" cy="75" r="60"/>
  </svg>
   <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
     <circle class="loading-inner" cx="75" cy="75" r="60"/>
  </svg>
- <button class="submitx2" id="buttonx2">submit</button>
-  <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+ <button class="submitx2 mt-2" id="buttonx2">submit</button>
+  <svg id="check" style="width:20px;height:20px" viewBox="0 0 20 20">
     <path fill="#FFFFFF" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
 </svg>
 </div>
+</form>
+<br>
+<div class="progress__container">
+  <div class="progress__bar"></div>
+</div>
+<br>
+<style>
+
+#fname,#lname,#email,#phone{
+    background: rgb(255, 255, 255);
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 6px;
+  padding-left: 24px;
+  border: solid 2px #eee;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: left;
+}
+.form__input {
+  background: none;
+  outline: none;
+}
+.form__input:focus {
+  border-color: #c9daff;
+}
+
+
+.progress__container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.progress__bar {
+  width: 0px;
+  height: 6px;
+  border-radius: 50px;
+  background: #49f549;
+  transition: 0.5s ease;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+</style>
+<script>
+    const inputs = document.querySelectorAll('.form__input');
+const progress = document.querySelector('.progress__bar');
+const segments = 100 / inputs.length;
+
+let fieldValues = [];
+
+const checkFields = () => {
+  let fieldsCompleted = 0;
+  let barWidth = 0;
+  
+  for(let i = fieldValues.length; i--;) {
+    if(fieldValues[i] === true){
+      fieldsCompleted += 1;
+    }
+  }
+  
+  barWidth = fieldsCompleted * segments;
+  progress.style.width = barWidth + '%';
+}
+
+for(let i = inputs.length; i--;){
+  inputs[i].addEventListener('input', (event) => {
+    const currentInput = event.currentTarget;
+    
+    if(!currentInput.value.length){
+      fieldValues[i] = false;
+    } else {
+      fieldValues[i] = true;
+    }
+    
+    checkFields();
+  });
+}
+
+</script>
+    
+            <!-- Inspired by this dribbble post by Colin Garvin https://dribbble.com/shots/1426764-submitx2-Button -->
+
 <style>
 
 
 
 .loading-dock {
-  background-color: white;
   width: 160px;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1101,28 +802,26 @@
 #buttonx2.submitx2 {
   cursor: pointer;
   width: 160px;
-  height: 50px;
+  height: 40px;
   font-size: 17px;
   font-weight: 600;
-  color: #58c996;
+  color: #07153a;
   background-color: white;
   border-radius: 40px;
-  border: 2px solid #58c996;
+  border: 2px solid #07153a;
   transition: all 0.2s;
-  letter-spacing: 0;
-  font-family: "Helvetica Neue", sans-serif;
 }
 #buttonx2.submitx2:hover {
-  background: #58c996;
-  color: white;
+  background: #00cc3318;
+  color: rgb(0, 0, 0);
 }
 #buttonx2.submitx2:active {
   transform: scale(0.95);
 }
 #buttonx2.submitx2:focus {
   outline: none;
-  background: #58c996;
-  color: white;
+  background: #00cc3318;
+  color: rgb(0, 0, 0);
 }
 #buttonx2.submitx2.popout {
   animation: circle-to-button 0.5s linear forwards;
@@ -1131,25 +830,25 @@
   animation: fade-to-original 0.3s linear;
 }
 #buttonx2.submitx2.return:hover {
-  background: #58c996;
-  color: white;
+  background: #00cc3318;
+  color: rgb(0, 0, 0);
 }
 
 .loaded #buttonx2.submitx2 {
-  background-color: #58c996;
+  background-color: #00cc3318;
   animation: button-to-circle 0.5s linear forwards;
   animation-delay: 0.3s;
 }
 .loaded #load {
-  animation: loading-circle 3s linear forwards;
+  animation: loading-circle 2s linear forwards;
   animation-delay: 1s;
 }
 
 #load, #load-b {
   display: none;
   position: absolute;
-  width: 58px;
-  height: 58px;
+  width: 40px;
+  height: 40px;
   opacity: 0;
 }
 #load .loading-inner, #load-b .loading-inner {
@@ -1157,7 +856,7 @@
   stroke-width: 8;
   stroke-miterlimit: 10;
   stroke-linecap: round;
-  stroke: #c3c3c3;
+  stroke: #dddddd;
   fill: transparent;
 }
 
@@ -1165,10 +864,10 @@
   opacity: 0;
 }
 #load-b .loading-inner {
-  stroke: #58c996;
+  stroke: #00cc33;
 }
 
-svg {
+svg#check {
   position: absolute;
   display: none;
 }
@@ -1190,20 +889,20 @@ svg {
 @keyframes button-to-circle {
   0% {
     width: 160px;
-    color: #58c996;
-    border-color: #58c996;
-    background-color: #58c996;
+    color: #00cc33;
+    border-color: #00cc33;
+    background-color: #00cc33;
   }
   50% {
     color: rgba(255, 255, 255, 0);
   }
   90% {
-    width: 50px;
+    width: 40px;
     color: rgba(255, 255, 255, 0);
     border-color: #c3c3c3;
   }
   100% {
-    width: 50px;
+    width: 40px;
     border-color: rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
@@ -1211,25 +910,25 @@ svg {
 }
 @keyframes circle-to-button {
   0% {
-    border-color: #58c996;
-    background-color: #58c996;
-    height: 50px;
-    width: 50px;
+    border-color: #00cc33;
+    background-color: #00cc33;
+    height: 40px;
+    width: 40px;
   }
   50% {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   100% {
-    height: 50px;
+    height: 40px;
     width: 160px;
-    border-color: #58c996;
-    background-color: #58c996;
+    border-color: #00cc33;
+    background-color: #00cc33;
   }
 }
 @keyframes fade-to-original {
   0% {
-    background-color: #58c996;
+    background-color: #00cc33;
   }
   100% {
     background-color: white;
@@ -1279,12 +978,7 @@ submitx2.addEventListener("click", function(){
   }
 });
 </script>
-            </form>
 
-            
-
-            </div>
-        </div>
         <div class=" card mb-4 ">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Input Rejection Form</h6>
