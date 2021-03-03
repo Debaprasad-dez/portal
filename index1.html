@@ -594,13 +594,13 @@
             }
         </style>
         
-        <form class="form">
-  <label for="fname" class="visuallyhidden">Your first name</label>
-  <div class="row m-0 p-0">
+       <div class="carb mb-4">
+         <div class="card-header bg-dark border">
+           <h6 class="m-0 font-weight-bold text-white">Doctor's Analysis</h6>
+         </div>
+         <div class="card-body bg-white border rounded">
+            <form class="form">
 
-      <input class="form__input" id="fname" type="text" name="fname" placeholder="First Name" required>
-      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
-  </div>
   <style>
       #textValidate{
           display: none;
@@ -617,50 +617,160 @@
       #phone:valid + #textValidate{
           display: block;
       }
+      
   </style>
-      <label for="lname" class="visuallyhidden">Your last name</label>
+      <label for="lname" class="visuallyhidden">Your Medical History</label>
   <div class="row m-0 p-0">
-      <input class="form__input" id="lname" type="text" name="lname" placeholder="Last Name" required>
-      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+      <textarea class="form__input" id="lname" type="text" name="lname" placeholder="Medical History" required></textarea>
+      <p class="small mt-4 ml-2 " id="textValidate"><i id="" class="fa fa-check-circle ml-1"></i> Medical History</p>
   </div>
-  <label for="email" class="visuallyhidden">Your email address</label>
+
+  <label for="email" class="visuallyhidden">Dental History</label>
   <div class="row m-0 p-0">
-      <input class="form__input" id="email" type="email" name="email" placeholder="Email Address" required>
-    <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
+      <textarea class="form__input" id="email" type="text" name="email" placeholder="Dental History" required></textarea>
+      <p class="small mt-4 ml-2 " id="textValidate"><i id="" class="fa fa-check-circle ml-1"></i> Dental History</p>
   </div>
-  <label for="phone" class="visuallyhidden">Your phone number</label>
-  <div class="row m-0 p-0">
-      <input class="form__input" id="phone" type="number" name="phone" placeholder="Phone number" required>
-      <i id="textValidate" class="fa fa-check-circle mt-4 ml-1"></i>
-  </div>
-  <div class="centered-cover">
+  <div style="width: 400px;">
+
+    <div class="row">
+      <div class="col-md-4">
+        
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2">Stains</h6>
+          <div class="row m-0 p-0">
+              <select style="background: white;color: rgb(110, 110, 110);" class="form form__input select1">
+                  <option value="null">null</option>
+                  <option value="stain1">+</option>
+                  <option value="stain2">++</option>
+                  <option value="stain3">+++</option>
+              </select>
+              <!-- the trick here is the select options must have the same value as the their repective element's class -->
+              <div class="box stain1">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED +</small></small></p>
+              </div>
+      
+              <div class="box stain2">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED ++</small></small></p>
+              </div>
+              <div class="box stain3">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED +++</small></small></p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2">Calculus</h6>
 		<div class="row m-0 p-0">
-				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input">
-						<option value="red">Null</option>
-						<option value="green">Green</option>
-						<option value="blue">Blue</option>
+      
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select2">
+						<option value="null">Null</option>
+						<option value="calculus1">+</option>
+						<option value="calculus2">++</option>
+						<option value="calculus3">+++</option>
 				</select>
 				<!-- the trick here is the select options must have the same value as the their repective element's class -->
-				<div class="box null">
+				<div class="box1 calculus1">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED +</small></small></p>
 				</div>
-				<div class="box blue">
-                    <i id="" class="fa fa-check-circle mt-4 ml-1"></i>
+
+				<div class="box1 calculus2">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED ++</small></small></p>
 				</div>
-				<div class="box green">
-                    <i id="" class="fa fa-check-circle mt-4 ml-1"></i>
+				<div class="box1 calculus3">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED +++</small></small></p>
 				</div>
 		</div>
 </div>
+      </div>
+      <div class="col-md-4">
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2">Gingivitis</h6>
+		<div class="row m-0 p-0">
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select3">
+						<option value="null">Null</option>
+						<option value="gingivitis1">Absent</option>
+						<option value="gingivitis2">Present</option>
+				</select>
+				<!-- the trick here is the select options must have the same value as the their repective element's class -->
+				
+
+				<div class="box2 gingivitis1">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED ABSENT</small></small></p>
+				</div>
+				<div class="box2 gingivitis2">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED PRESENT</small></small></p>
+				</div>
+		</div>
+</div>
+      </div>
+    </div>
+  </div>
+ 
+  
 <script>
     $(document).ready(function() {
 		$('.box').hide(); //hide
 		$('.null').show(); //set default class to be shown here, or remove to hide all
 });
-$('select').change(function() { //on change do stuff
+$('.select1').change(function() { //on change do stuff
 		$('.box').hide(); //hide all with .box class
 		$('.' + $(this).val()).show(); //show selected option's respective element
 });
 </script>
+<script>
+    $(document).ready(function() {
+		$('.box1').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('.select2').change(function() { //on change do stuff
+		$('.box1').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<script>
+    $(document).ready(function() {
+		$('.box2').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('.select3').change(function() { //on change do stuff
+		$('.box2').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<style>
+
+
+
+#radio1 label {
+    position:relative;
+    cursor:pointer;
+}
+#radio1 label input {
+    display:none;
+}
+#radio1 label span {
+    position:relative;
+    display:inline-block;
+    padding:4px 16px;
+    border: 2px solid #c2c2c2;
+    color: #c2c2c2;
+    border-radius: 4px;
+}
+
+
+
+#radio1 label input:checked ~ span.no {
+    color:#00ff22;
+    border-color:#00ff22;
+}
+
+#radio1 label input:checked ~ span.no:before,
+#radio1 label input:checked ~ span.no:after {
+    background:#00ff22;
+}
+
+</style>
 <style>
 
 .hidden {
@@ -668,10 +778,7 @@ $('select').change(function() { //on change do stuff
 }
 
 /* Ignore these styles, just for display */
-.box {
-  height: 10px;
-  width: 10px;
-}
+
 
 
 
@@ -700,6 +807,9 @@ $('select').change(function() { //on change do stuff
 <div class="progress__container">
   <div class="progress__bar"></div>
 </div>
+         </div>
+       </div>
+<br>
 <br>
 <style>
 
