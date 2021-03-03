@@ -599,7 +599,8 @@
            <h6 class="m-0 font-weight-bold text-white">Doctor's Analysis</h6>
          </div>
          <div class="card-body bg-white border rounded">
-            <form class="form">
+          <form class="form">
+            <h5><b>Basic Details</b></h5>
 
   <style>
       #textValidate{
@@ -636,9 +637,9 @@
       <div class="col-md-4">
         
         <div class="centered-cover">
-          <h6 class="p-0 m-0 pl-2">Stains</h6>
+          <h6 class="p-0 m-0 pl-2 mt-2">Stains</h6>
           <div class="row m-0 p-0">
-              <select style="background: white;color: rgb(110, 110, 110);" class="form form__input select1">
+              <select style="background: white;color: rgb(110, 110, 110);" class="form form__input select1 my-0" >
                   <option value="null">null</option>
                   <option value="stain1">+</option>
                   <option value="stain2">++</option>
@@ -660,10 +661,10 @@
       </div>
       <div class="col-md-4">
         <div class="centered-cover">
-          <h6 class="p-0 m-0 pl-2">Calculus</h6>
+          <h6 class="p-0 m-0 pl-2 mt-2">Calculus</h6>
 		<div class="row m-0 p-0">
       
-				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select2">
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select2 my-0">
 						<option value="null">Null</option>
 						<option value="calculus1">+</option>
 						<option value="calculus2">++</option>
@@ -685,9 +686,9 @@
       </div>
       <div class="col-md-4">
         <div class="centered-cover">
-          <h6 class="p-0 m-0 pl-2">Gingivitis</h6>
+          <h6 class="p-0 m-0 pl-2 mt-2">Gingivitis</h6>
 		<div class="row m-0 p-0">
-				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select3">
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select3 my-0">
 						<option value="null">Null</option>
 						<option value="gingivitis1">Absent</option>
 						<option value="gingivitis2">Present</option>
@@ -699,6 +700,91 @@
                     <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED ABSENT</small></small></p>
 				</div>
 				<div class="box2 gingivitis2">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED PRESENT</small></small></p>
+				</div>
+		</div>
+</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2 mt-2">Oral Hygiene</h6>
+          <div class="row m-0 p-0">
+              <select style="background: white;color: rgb(110, 110, 110);" class="form form__input select4 my-0">
+                  <option value="null">null</option>
+                  <option value="hygiene1">Excellent</option>
+                  <option value="hygiene2">Good</option>
+                  <option value="hygiene3">Fair</option>
+                  <option value="hygiene4">Poor</option>
+              </select>
+              <!-- the trick here is the select options must have the same value as the their repective element's class -->
+              <div class="box3 hygiene1">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED EXCELLENT</small></small></p>
+              </div>
+      
+              <div class="box3 hygiene2">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED GOOD</small></small></p>
+              </div>
+              <div class="box3 hygiene3">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED FAIR</small></small></p>
+              </div>
+              <div class="box3 hygiene4">
+                          <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED POOR</small></small></p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2 mt-2">Gum recession</h6>
+		<div class="row m-0 p-0">
+      
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select5 my-0">
+						<option value="null">Null</option>
+						<option value="recession1">Absent</option>
+						<option value="recession2">class 1</option>
+						<option value="recession3">class 2</option>
+						<option value="recession4">class 3</option>
+						<option value="recession5">class 4</option>
+				</select>
+				<!-- the trick here is the select options must have the same value as the their repective element's class -->
+				<div class="box4 recession1">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED ABSENT</small></small></p>
+				</div>
+
+				<div class="box4 recession2">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED CLASS 1</small></small></p>
+				</div>
+				<div class="box4 recession3">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED CLASS 2</small></small></p>
+				</div>
+				<div class="box4 recession4">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED CLASS 3</small></small></p>
+				</div>
+				<div class="box4 recession5">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i><small><small> SELECTED CLASS 4</small></small></p>
+				</div>
+		</div>
+</div>
+      </div>
+      <div class="col-md-4">
+        <div class="centered-cover">
+          <h6 class="p-0 m-0 pl-2 mt-2">Tooth decay</h6>
+		<div class="row m-0 p-0">
+				<select style="background: white;color: rgb(110, 110, 110);" class="form form__input select6 my-0">
+						<option value="null">Null</option>
+						<option value="decay1">Absent</option>
+						<option value="decay2">Present</option>
+				</select>
+				<!-- the trick here is the select options must have the same value as the their repective element's class -->
+				
+
+				<div class="box5 decay1">
+                    <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED ABSENT</small></small></p>
+				</div>
+				<div class="box5 decay2">
                     <p class="small my-0 ml-2 " id=""><i id="" class="fa fa-check-circle ml-1"></i> <small><small>SELECTED PRESENT</small></small></p>
 				</div>
 		</div>
@@ -735,6 +821,36 @@ $('.select2').change(function() { //on change do stuff
 });
 $('.select3').change(function() { //on change do stuff
 		$('.box2').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<script>
+    $(document).ready(function() {
+		$('.box3').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('.select4').change(function() { //on change do stuff
+		$('.box3').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<script>
+    $(document).ready(function() {
+		$('.box4').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('.select5').change(function() { //on change do stuff
+		$('.box4').hide(); //hide all with .box class
+		$('.' + $(this).val()).show(); //show selected option's respective element
+});
+</script>
+<script>
+    $(document).ready(function() {
+		$('.box5').hide(); //hide
+		$('.null').show(); //set default class to be shown here, or remove to hide all
+});
+$('.select6').change(function() { //on change do stuff
+		$('.box5').hide(); //hide all with .box class
 		$('.' + $(this).val()).show(); //show selected option's respective element
 });
 </script>
@@ -804,8 +920,18 @@ $('.select3').change(function() { //on change do stuff
 </div>
 </form>
 <br>
-<div class="progress__container">
-  <div class="progress__bar"></div>
+<style>
+  #complete{
+    display: none;
+  }
+</style>
+<div class="row m-0 p-0">
+
+  <div class="progress__container pt-2">
+    <div class="progress__bar"></div>
+    
+  </div>
+  <p class="pt-0 mt-0 ml-2 text-success" id="complete"><small><i id="" class="fa fa-check-circle ml-1"></i> Section complete</small></p>
 </div>
          </div>
        </div>
@@ -862,6 +988,7 @@ $('.select3').change(function() { //on change do stuff
 <script>
     const inputs = document.querySelectorAll('.form__input');
 const progress = document.querySelector('.progress__bar');
+ complete = document.querySelector('#complete');
 const segments = 100 / inputs.length;
 
 let fieldValues = [];
@@ -878,6 +1005,10 @@ const checkFields = () => {
   
   barWidth = fieldsCompleted * segments;
   progress.style.width = barWidth + '%';
+  if (barWidth > 99){
+  complete.style.display = 'block';
+}
+
 }
 
 for(let i = inputs.length; i--;){
